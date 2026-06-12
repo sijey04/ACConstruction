@@ -343,17 +343,23 @@ onUnmounted(() => {
 }
 
 @media (max-width: 768px) {
-  .huge-title { font-size: 40px; }
-  .subtitle { font-size: 16px; padding: 0 20px; }
-  .service-row, .service-row.reverse { flex-direction: column; min-height: auto; }
-  .service-text { padding: 60px 20px 30px; align-items: center; text-align: center; }
-  .service-text h2 { font-size: 32px; margin-bottom: 12px; }
-  .service-text p { font-size: 15px; margin-bottom: 24px; line-height: 1.6; }
-  .feature-list { align-items: center; }
-  .feature-list li { font-size: 14px; gap: 8px; }
-  .service-visual { padding: 0 20px 60px; height: 50vh; width: 100%; }
-  .image-wrapper { height: 100%; width: 100%; }
-  .services-footer h2 { font-size: 32px; margin-bottom: 20px; padding: 0 20px; }
-  .huge-btn { padding: 16px 32px; font-size: 15px; }
+  .huge-title { font-size: 32px; }
+  .subtitle { font-size: 14px; padding: 0 20px; }
+  
+  .service-row { flex-direction: row; align-items: center; min-height: 100vh; padding: 20px; gap: 10px; }
+  .service-row.reverse { flex-direction: row-reverse; }
+  
+  .service-text { padding: 0; flex: 1; align-items: flex-start; text-align: left; }
+  .service-text h2 { font-size: 20px; margin-bottom: 12px; letter-spacing: -0.5px; }
+  .service-text p { font-size: 11px; margin-bottom: 16px; line-height: 1.4; }
+  .service-num { font-size: 10px; margin-bottom: 8px; }
+  .feature-list { align-items: flex-start; }
+  .feature-list li { font-size: 10px; gap: 6px; }
+  
+  .service-visual { padding: 0; flex: 1; height: 40vh; }
+  .image-wrapper { height: 100%; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+  
+  .services-footer h2 { font-size: 32px; margin-bottom: 20px; }
+  .huge-btn { padding: 12px 24px; font-size: 14px; }
 }
 </style>

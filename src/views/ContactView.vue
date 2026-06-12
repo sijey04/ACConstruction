@@ -310,15 +310,28 @@ onMounted(() => {
 }
 
 @media (max-width: 768px) {
-  .contact-page { padding: 40px 20px; height: auto; overflow: visible; display: block; }
-  .contact-container { flex-direction: column; gap: 40px; margin-top: 80px; }
-  .huge-title { font-size: 48px; margin-bottom: 12px; }
-  .subtitle { font-size: 15px; margin-bottom: 20px; }
-  .form-card { padding: 30px; max-width: 100%; }
-  .form-card h2 { font-size: 24px; margin-bottom: 16px; }
-  .submit-btn { padding: 16px; font-size: 16px; }
-  .contact-info { gap: 20px; grid-template-columns: 1fr; }
-  .input-row { flex-direction: column; gap: 16px; }
-  .contact-form { gap: 16px; }
+  .contact-page { padding: 80px 20px 40px; height: auto; overflow: visible; display: block; background-color: #fcfcfc; }
+  .contact-container { flex-direction: column; gap: 30px; margin-top: 0; }
+  
+  .text-side { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0; }
+  .huge-title { font-size: 36px; margin-bottom: 8px; letter-spacing: -1px; }
+  .subtitle { font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
+  
+  .contact-info { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 12px; }
+  .info-block { flex: 1 1 45%; background: #fff; padding: 16px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); text-align: center; }
+  .info-label { font-size: 10px; color: #888; margin-bottom: 4px; display: block; }
+  .info-block p, .info-block a { font-size: 12px; font-weight: 600; color: #111; }
+  
+  .form-side { width: 100%; margin-top: 10px; }
+  .form-card { padding: 24px; background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+  .form-card h2 { font-size: 20px; text-align: center; margin-bottom: 20px; }
+  
+  .input-row { flex-direction: column; gap: 12px; }
+  .form-group { gap: 6px; }
+  .form-group label { font-size: 12px; margin-left: 4px; }
+  .form-group input, .form-group select, .form-group textarea { padding: 14px 16px; font-size: 14px; border-radius: 12px; background: #fafafa; border: 1px solid #eee; }
+  .form-group textarea { height: 120px; }
+  
+  .submit-btn { width: 100%; border-radius: 30px; padding: 16px; font-size: 15px; font-weight: 600; margin-top: 8px; }
 }
 </style>
