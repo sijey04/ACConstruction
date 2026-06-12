@@ -47,6 +47,7 @@ onUnmounted(() => {
             <span class="text-mask"><span class="line-3 since-text">Since 1989</span></span>
           </div>
         </div>
+      </div>
     </Transition>
 
     <header class="navbar">
