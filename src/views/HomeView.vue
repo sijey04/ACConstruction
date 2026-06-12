@@ -617,21 +617,23 @@ const closeModal = () => {
 
 .close-btn {
   position: absolute;
-  top: 24px; right: 24px;
-  background: rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
-  border: none;
-  width: 36px; height: 36px;
+  top: 20px; right: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  width: 40px; height: 40px;
   border-radius: 50%;
-  color: #333;
+  color: #fff;
   cursor: pointer;
-  z-index: 10;
+  z-index: 100;
   display: flex; align-items: center; justify-content: center;
-  transition: background 0.2s, transform 0.2s;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .close-btn:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.4);
   transform: scale(1.05);
 }
 
