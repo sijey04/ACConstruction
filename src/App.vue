@@ -44,10 +44,9 @@ onUnmounted(() => {
           <div class="intro-text">
             <span class="text-mask"><span class="line-1">Engineering the</span></span>
             <span class="text-mask"><span class="line-2">Marshall Islands</span></span>
+            <span class="text-mask"><span class="line-3 since-text">Since 1989</span></span>
           </div>
         </div>
-
-      </div>
     </Transition>
 
     <header class="navbar">
@@ -92,6 +91,7 @@ onUnmounted(() => {
   background-color: #fff;
   z-index: 99999;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -174,14 +174,20 @@ onUnmounted(() => {
 
 .line-1 {
   color: #888;
-  /* Reveals after crane lands */
   animation: revealText 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.0s forwards;
 }
 
 .line-2 {
   color: #111;
-  /* Reveals slightly after line 1 */
   animation: revealText 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.2s forwards;
+}
+
+.line-3.since-text {
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-top: 8px;
+  animation: revealText 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.4s forwards;
 }
 
 /* Keyframes */

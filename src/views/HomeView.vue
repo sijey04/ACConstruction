@@ -41,7 +41,7 @@
         <div class="intro-stats">
           <div class="stat-box animate-up delay-2">
             <span class="stat-number">20+</span>
-            <span class="stat-label">Years of Excellence</span>
+            <span class="stat-label">Years of Excellence<br><span style="font-size: 0.85em; opacity: 0.6; display: block; margin-top: 4px;">Since 1989</span></span>
           </div>
           <div class="stat-box animate-up delay-3">
             <span class="stat-number">150+</span>
