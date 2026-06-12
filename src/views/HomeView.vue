@@ -329,10 +329,6 @@ const closeModal = () => {
   animation: scrollGallery 80s linear infinite;
 }
 
-.gallery-section:hover .gallery-track {
-  animation-play-state: paused;
-}
-
 .gallery-item {
   width: 400px; 
   height: 100%;
