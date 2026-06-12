@@ -784,13 +784,13 @@ const closeModal = () => {
   .hero-top { margin-top: 15vh; margin-bottom: 8vh; }
   .hero-title { font-size: 40px; }
   .hero-subtitle { font-size: 14px; padding: 0 20px; line-height: 1.5; }
-  .intro-container { gap: 40px; padding: 0 20px; flex-direction: column; }
-  .intro-text h2 { font-size: 28px; }
-  .intro-text p { font-size: 14px; }
-  .intro-stats { gap: 16px; }
-  .stat-number { font-size: 32px; }
-  .stat-label { font-size: 12px; }
-  .stat-box { padding: 20px; }
+  .intro-container { gap: 32px; padding: 0 20px; flex-direction: column; text-align: center; }
+  .intro-text h2 { font-size: 32px; margin-bottom: 16px; letter-spacing: -1px; }
+  .intro-text p { font-size: 14px; line-height: 1.6; }
+  .intro-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; }
+  .stat-box { padding: 20px 8px; align-items: center; justify-content: center; text-align: center; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+  .stat-number { font-size: 24px; margin-bottom: 6px; }
+  .stat-label { font-size: 9px; line-height: 1.3; }
   .capabilities-container, .works-container { padding: 0 20px; }
   .cap-header h2 { font-size: 28px; }
   .cap-header p { font-size: 14px; }
