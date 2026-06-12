@@ -299,20 +299,26 @@ onMounted(() => {
 }
 
 @media (max-width: 1024px) {
-  .contact-page {
-    height: auto;
-    overflow: visible;
-    padding: 60px 40px;
-  }
-  .contact-container {
-    flex-direction: column;
-    gap: 60px;
-  }
-  .huge-title {
-    font-size: 56px;
-  }
-  .input-row {
-    flex-direction: column;
-  }
+  .huge-title { font-size: 40px; }
+  .subtitle { font-size: 14px; margin-bottom: 30px; }
+  .contact-container { gap: 40px; margin-top: 80px; }
+  .form-card { padding: 30px; }
+  .form-card h2 { font-size: 20px; margin-bottom: 20px; }
+  .form-group input, .form-group select, .form-group textarea { padding: 10px 14px; font-size: 13px; }
+  .info-block p, .info-block a { font-size: 13px; }
+  .info-label { font-size: 10px; margin-bottom: 8px; }
+}
+
+@media (max-width: 768px) {
+  .contact-page { padding: 40px 20px; height: auto; overflow: visible; display: block; }
+  .contact-container { flex-direction: column; gap: 40px; margin-top: 80px; }
+  .huge-title { font-size: 48px; margin-bottom: 12px; }
+  .subtitle { font-size: 15px; margin-bottom: 20px; }
+  .form-card { padding: 30px; max-width: 100%; }
+  .form-card h2 { font-size: 24px; margin-bottom: 16px; }
+  .submit-btn { padding: 16px; font-size: 16px; }
+  .contact-info { gap: 20px; grid-template-columns: 1fr; }
+  .input-row { flex-direction: column; gap: 16px; }
+  .contact-form { gap: 16px; }
 }
 </style>

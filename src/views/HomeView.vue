@@ -759,22 +759,45 @@ const closeModal = () => {
 }
 
 @media (max-width: 900px) {
-  .intro-container {
-    flex-direction: column;
-  }
-  .cap-grid {
-    grid-template-columns: 1fr;
-  }
-  .modal-content {
-    flex-direction: column;
-    max-height: 85vh;
-  }
-  .modal-image-container {
-    height: 300px;
-    flex: none;
-  }
-  .modal-image-container::after {
-    display: none;
-  }
+  .hero-title { font-size: 40px; }
+  .hero-subtitle { font-size: 14px; }
+  .intro-text h2 { font-size: 28px; margin-bottom: 16px; }
+  .intro-text p { font-size: 13px; }
+  .stat-number { font-size: 32px; }
+  .stat-box { padding: 20px; }
+  .cap-card { padding: 16px 20px; }
+  .cap-card h3 { font-size: 16px; }
+  .cap-card p { font-size: 12px; }
+  .works-header h2 { font-size: 28px; }
+  .works-header p { font-size: 14px; }
+  .work-details h3 { font-size: 16px; }
+  .work-details p { font-size: 12px; }
+  .gallery-item { width: 200px; }
+  .modal-content { max-height: 85vh; }
+  .modal-image-container { flex: 1; }
+  .modal-info-scroll { padding: 24px; }
+}
+
+@media (max-width: 768px) {
+  .hero-top { margin-top: 15vh; margin-bottom: 8vh; }
+  .hero-title { font-size: 40px; }
+  .hero-subtitle { font-size: 14px; padding: 0 20px; line-height: 1.5; }
+  .intro-container { gap: 40px; padding: 0 20px; flex-direction: column; }
+  .intro-text h2 { font-size: 28px; }
+  .intro-text p { font-size: 14px; }
+  .intro-stats { gap: 16px; }
+  .stat-number { font-size: 32px; }
+  .stat-label { font-size: 12px; }
+  .stat-box { padding: 20px; }
+  .capabilities-container, .works-container { padding: 0 20px; }
+  .cap-header h2 { font-size: 28px; }
+  .cap-header p { font-size: 14px; }
+  .works-header h2 { font-size: 28px; margin-bottom: 10px; }
+  .works-grid { gap: 20px; }
+  .work-image { height: 180px; }
+  .work-details { padding: 20px; }
+  .gallery-section { height: 35vh; }
+  .gallery-section::before { top: -60px; height: 100px; width: 160%; left: -30%; }
+  .gallery-section::after { bottom: -60px; height: 100px; width: 160%; left: -30%; }
 }
 </style>

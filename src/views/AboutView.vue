@@ -309,9 +309,24 @@ onUnmounted(() => {
 }
 
 @media (max-width: 1024px) {
-  .huge-title { font-size: 64px; }
-  .split-layout { flex-direction: column; gap: 40px; }
+  .huge-title { font-size: 6vw; }
+  .split-layout { gap: 20px; }
   .text-panel { padding-right: 0; }
-  .image-panel { flex: none; height: 40vh; width: 100%; }
+  .text-panel h2 { font-size: 32px; margin-bottom: 16px; }
+  .text-panel p { font-size: 14px; line-height: 1.5; }
+  .subtitle { font-size: 16px; max-width: 80%; }
+}
+
+@media (max-width: 768px) {
+  .huge-title { font-size: 32px; }
+  .split-layout { gap: 10px; align-items: center; justify-content: center; }
+  .text-panel h2 { font-size: 20px; margin-bottom: 12px; }
+  .text-panel p { font-size: 11px; line-height: 1.4; }
+  .label { font-size: 10px; margin-bottom: 8px; }
+  .h-slide { padding: 20px; }
+  .image-panel { height: 40vh; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+  .center-content h2 { font-size: 32px; margin-bottom: 24px; }
+  .huge-btn { padding: 12px 24px; font-size: 14px; }
+  .scroll-indicator { right: 0; bottom: 20px; }
 }
 </style>
