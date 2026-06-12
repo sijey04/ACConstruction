@@ -799,5 +799,16 @@ const closeModal = () => {
   .gallery-section { height: 35vh; }
   .gallery-section::before { top: -60px; height: 100px; width: 160%; left: -30%; }
   .gallery-section::after { bottom: -60px; height: 100px; width: 160%; left: -30%; }
+
+  .modal-content { flex-direction: column; width: 95vw; height: 90vh; border-radius: 16px; }
+  .modal-image-container { height: 35vh; flex: none; }
+  .modal-image-container::after { display: none; /* remove right gradient */ }
+  .modal-info-scroll { padding: 24px; flex: 1; }
+  .modal-header h2 { font-size: 24px; margin-bottom: 4px; }
+  .modal-header p { font-size: 14px; margin-bottom: 16px; }
+  .modal-description { font-size: 13px; line-height: 1.5; margin-bottom: 24px; }
+  .detail-grid { grid-template-columns: 1fr; gap: 16px; }
+  .detail-item h4 { font-size: 11px; margin-bottom: 4px; }
+  .detail-item p { font-size: 13px; }
 }
 </style>
