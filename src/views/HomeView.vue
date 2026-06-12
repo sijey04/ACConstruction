@@ -800,7 +800,8 @@ const closeModal = () => {
   .gallery-section::before { top: -60px; height: 100px; width: 160%; left: -30%; }
   .gallery-section::after { bottom: -60px; height: 100px; width: 160%; left: -30%; }
 
-  .modal-content { flex-direction: column; width: 95vw; height: 85vh; border-radius: 16px; }
+  .modal-overlay { padding: 16px; }
+  .modal-content { flex-direction: column; width: 100%; height: 85vh; border-radius: 16px; }
   .modal-image-container { height: 30vh; flex: none; }
   .modal-image-container::after { display: none; }
   .modal-info { overflow: hidden; }
